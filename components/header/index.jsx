@@ -3,18 +3,15 @@ import NavigationItems from "./navmenu";
 import Image from "next/image";
 import InfinteTilesBackground from "./infinteBackgrounTiles";
 export default function Header() {
-  const classs = "flex w-52 p-1 m-1";
-
   return (
-    <div className=" w-screen h-[90vh] relative bg-header ">
-      <span className="absolute block inset-0 bg-header z-10 opacity-70 backdrop-blur-sm"></span>
+    <div className=" w-screen min-h-[35rem] h-[90vh] max-h-[40rem] relative bg-header overflow-x-hidden">
+      <span className="absolute block inset-0 bg-header z-20 opacity-80"></span>
+      <span className="absolute block inset-0 bg-transparent z-10 opacity-90   backdrop-blur-[1px]"></span>
       <NavigationBar />
-      <div className="relative w-full h-full flex flex-col overflow-x-hidden justify-between">
-        <InfinteTilesBackground classs={classs} mSpeed="15" />
-        <InfinteTilesBackground classs={classs} mSpeed="20" />
-        <InfinteTilesBackground classs={classs} mSpeed="10" />
-        <InfinteTilesBackground classs={classs} mSpeed="16" />
-        <InfinteTilesBackground classs={classs} mSpeed="50" />
+      <div className="relative w-full h-full flex flex-col overflow-x-hidden justify-evenly">
+        <InfinteTilesBackground mSpeed="15" />
+        <InfinteTilesBackground mSpeed="50" />
+        <InfinteTilesBackground mSpeed="20" />
       </div>
       <div className="absolute inset-0 flex justify-center items-center z-[20] ">
         <div className=" flex flex-col items-center justify-between sm:h-36">
