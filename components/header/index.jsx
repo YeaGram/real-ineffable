@@ -1,12 +1,13 @@
 import NavigationBar from "./nav";
 import NavigationItems from "./navmenu";
 import Image from "next/image";
-import InfinteTilesBackground from "./infinteBackgrounTiles";
+import InfinteTilesBackground from "./infinteBackgroundTiles";
+
 export default function Header() {
   return (
     <div className=" w-screen min-h-[35rem] h-[90vh] max-h-[40rem] relative bg-header overflow-x-hidden">
-      <span className="absolute block inset-0 bg-header z-20 opacity-80"></span>
-      <span className="absolute block inset-0 bg-transparent z-10 opacity-90   backdrop-blur-[1px]"></span>
+      <span className="absolute block inset-0 bg-header z-20 opacity-[85%]"></span>
+      <span className="absolute block inset-0 bg-transparent z-10 opacity-90 backdrop-blur-[1px]"></span>
       <NavigationBar />
       <div className="relative w-full h-full flex flex-col overflow-x-hidden justify-evenly">
         <InfinteTilesBackground mSpeed="15" />
@@ -23,7 +24,7 @@ export default function Header() {
               objectFit="contain"
             />
           </div>
-          <ul className="flex flex-col sm:flex-row">
+          <ul className="flex flex-col sm:flex-row items-center w-full">
             <NavigationItems url="#" title="Home" />
             <NavigationItems url="#" title="About" />
             <NavigationItems url="#" title="Gallery" />
