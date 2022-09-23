@@ -25,9 +25,9 @@ export default function Header({ FormHandle }) {
             />
           </div>
           <ul className="flex flex-col sm:flex-row items-center w-full">
-            <NavigationItems url="#" title="Home" />
-            <NavigationItems url="#" title="About" />
-            <NavigationItems url="#" title="Gallery" />
+            <NavigationItems url="/" title="Home" />
+            <NavigationItems url="#about" title="About" />
+            <NavigationItems url="/gallery" title="Gallery" />
           </ul>
         </div>
       </div>
