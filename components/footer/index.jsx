@@ -1,5 +1,6 @@
 import AboutParagraft from "./about";
 import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="bg-footer font-Poppins w-screen pb-10 flex justify-center px-20 sm:px-10 md:px-28 lg:px-44 xl:px-52">
